@@ -4,4 +4,9 @@
   <artifactId>simple_jpa_examples</artifactId>
   <version>1.0</version>
   <packaging>pom</packaging>
+  <modules>
+  	<module>mysql_simple_jpa_examples</module>
+  	<module>oracle_simple_jpa_examples</module>
+  	<module>postgres_simple_jpa_examples</module>
+  </modules>
 </project>
