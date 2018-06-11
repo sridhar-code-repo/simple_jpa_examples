@@ -6,15 +6,9 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
-import lombok.Data;
-import lombok.EqualsAndHashCode;
-import lombok.ToString;
 
 @Entity
 @Table(name = "STUDENT_DETAILS")
-@Data
-@ToString
-@EqualsAndHashCode
 public class StudentDetail {
 
 	@Id
@@ -24,4 +18,29 @@ public class StudentDetail {
 	private String street;
 	@Column
 	private String place;
+
+	public Long getStudentDetailId() {
+		return studentDetailId;
+	}
+
+	public void setStudentDetailId(Long studentDetailId) {
+		this.studentDetailId = studentDetailId;
+	}
+
+	public String getStreet() {
+		return street;
+	}
+
+	public void setStreet(String street) {
+		this.street = street;
+	}
+
+	public String getPlace() {
+		return place;
+	}
+
+	public void setPlace(String place) {
+		this.place = place;
+	}
+
 }
