@@ -41,7 +41,7 @@ public class Demo {
 		EntityTransaction tx = em.getTransaction();
 		tx.begin();
 		Student student = em.getReference(Student.class, 2000L);
-//		System.out.println(student.getName());
+		System.out.println(student.getClass());
 		tx.commit();
 		em.close();
 
