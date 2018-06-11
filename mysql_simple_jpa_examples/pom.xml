@@ -42,5 +42,6 @@
 
 	<modules>
 		<module>mysql_crud_example_01</module>
+		<module>one_to_one_example_01</module>
 	</modules>
 </project>
