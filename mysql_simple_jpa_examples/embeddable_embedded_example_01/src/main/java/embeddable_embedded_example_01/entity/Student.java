@@ -22,7 +22,8 @@ public class Student {
 	@Column
 	private String name;
 	@ElementCollection
-	@CollectionTable(name = "student_courses", joinColumns = { @JoinColumn(name = "stu_id") })
+	/*@CollectionTable(name = "student_courses", joinColumns = {
+			@JoinColumn(name = "stu_id", referencedColumnName = "id") })*/
 	private List<Course> courses;
 
 	public Long getId() {

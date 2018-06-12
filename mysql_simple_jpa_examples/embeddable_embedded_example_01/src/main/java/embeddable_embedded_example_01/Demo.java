@@ -22,11 +22,19 @@ public class Demo {
 			emf = Persistence.createEntityManagerFactory("pu");
 			create2();
 			create();
+			load();
 		} finally {
 			if (emf != null)
 				emf.close();
 		}
 
+	}
+
+	public static void load() {
+		EntityManager em = emf.createEntityManager();
+		Student student = em.find(Student.class, 1L);
+		System.out.println(student);
+		em.close();
 	}
 
 	public static void create() {
