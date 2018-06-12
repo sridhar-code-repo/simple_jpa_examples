@@ -41,5 +41,6 @@
 		<module>many_to_one_example_01</module>
 		<module>many_to_many_example_01</module>
 		<module>embeddable_embedded_example_01</module>
+		<module>secondary_table_example_01</module>
 	</modules>
 </project>
